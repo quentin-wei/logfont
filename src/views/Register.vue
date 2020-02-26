@@ -6,7 +6,7 @@
         </div>
         <div class="register-form">
           <div class="register-form-header">
-            <div class="pd10 font-weight">register to our site</div>
+            <div class="pd10 font-weight">zhece</div>
             <div class="pdb10">register to have a nice day:</div>
             <div class="upload-avatar">
               <div class="upload-button">
