@@ -70,6 +70,9 @@ export default {
       }
     }
     this.getCode()
+
+    // 换成dayjs
+    // console.log(this.$moment(1582685834 * 1000).format('YYYY-MM-DD HH:mm:ss'))
   },
   methods: {
     async getCode () {
