@@ -37,13 +37,6 @@ module.exports = {
         args[0].cdn = cdn;
         return args;
       });
-
-      config.externals = {
-        vue: "Vue",
-        vuex: "Vuex",
-        "vue-router": "VueRouter",
-        axios: "axios"
-      };
     }
 
     // 移除 prefetch 插件
@@ -51,10 +44,14 @@ module.exports = {
     // 移除 preload 插件
     config.plugins.delete("preload");
   },
-  configureWebpack: {
-    plugins: [
-      // 按需引入moment 语言包
-      // new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn/)
-    ]
+  configureWebpack: config => {
+    if (isProduction) {
+      config.externals = {
+        vue: "Vue",
+        vuex: "Vuex",
+        "vue-router": "VueRouter",
+        axios: "axios"
+      };
+    }
   }
 };

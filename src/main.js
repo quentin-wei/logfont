@@ -2,13 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
-// 按需引入语言包
 import moment from 'dayjs'
-// import momentLocale from 'moment/locale/zh-cn';
-// moment.updateLocale('zh-cn', momentLocale);
-// moment.locale('zh-ch');
-
 import { Button, Form, FormItem, Input, Icon, Avatar, link, Message, Container, Aside, Main, DatePicker, Select, Option, Table, TableColumn, PageHeader, MessageBox, Tag, Pagination, Loading, Upload, Dialog, Tooltip, Notification, Rate } from 'element-ui'
 
 import 'normalize.css/normalize.css'
